@@ -8,16 +8,17 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Account extends BaseEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="account_id")
-    private Long id;
-    //
+
+    @Column(name="customer_id")
+    private Long customerId;
+
     @Column(name="account_number")
+    @Id
     private Long accountNumber;
-    //
+
     @Column(name="account_type")
     private String accountType;
-    //
+
+    @Column(name="branch_address")
     private String branchAddress;
 }

@@ -8,10 +8,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class AccountDTO {
-    Long id;
     //
     private Long accountNumber;
-    private String accountName;
     private String accountType;
     private String branchAddress;
      //

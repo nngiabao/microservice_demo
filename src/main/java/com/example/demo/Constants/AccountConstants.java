@@ -1,4 +1,4 @@
-package com.example.demo.Conmstants;
+package com.example.demo.Constants;
 
 public class AccountConstants {
     private AccountConstants() {

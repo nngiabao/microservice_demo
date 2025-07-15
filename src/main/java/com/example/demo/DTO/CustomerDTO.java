@@ -1,15 +1,13 @@
 package com.example.demo.DTO;
 
 import jakarta.persistence.Column;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Data
 @AllArgsConstructor
 @Getter
 @Setter
+@NoArgsConstructor
 public class CustomerDTO {
     private Long customerId;
 
@@ -18,4 +16,6 @@ public class CustomerDTO {
     private String email;
 
     private String mobileNumber;
+
+    private AccountDTO account;
 }
